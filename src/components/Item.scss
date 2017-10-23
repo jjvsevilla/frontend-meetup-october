@@ -1,0 +1,49 @@
+/* Item component */
+figure.chela-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0 0 2rem 0;
+  padding: 0;
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  box-shadow: 0 0 0 5px rgba(0,0,0,0.03);
+
+  div.image-wrapper {
+    // position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  figcaption.caption {
+    margin: 0 2rem 2rem;
+
+    div.actions {
+      display: flex;
+      justify-content: center;
+
+      button {
+        border: 2px solid #f2f2f2;
+        background: none;
+        flex-basis: 48%;
+        display: inline-block;
+        line-height: 2;
+        text-decoration: none;
+        padding: 5px;
+        text-align: center;
+        color: #125688;
+        transition: all 0.2s;
+        box-sizing: border-box;
+
+        &.likes {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  // figure
+    // img
+  // figcaption
+}

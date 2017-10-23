@@ -1,0 +1,13 @@
+div.chela-viewer {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+  div.chela-viewer div.left-panel,
+  div.chela-viewer div.right-panel {
+    width: 50%; }
+  div.chela-viewer div.left-panel {
+    margin-right: 1rem; }
+  div.chela-viewer div.right-panel {
+    margin-left: 1rem; }

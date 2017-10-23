@@ -1,0 +1,60 @@
+@import url(//fonts.googleapis.com/css?family=Seymour+One);
+
+/* Header component */
+div.header-wrapper {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 2rem;
+  background: #222222;
+  height: 200px;
+  margin-bottom: 2rem;
+  background: #222222;
+
+  a.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+
+    img {
+      height: 80%;
+      animation: beerjs-logo-animation infinite 2s linear;
+    }
+
+    div.logo {
+      font-size: 6rem;
+      font-family: 'Seymour One', sans-serif;
+      color: #ffffff;
+      margin: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        display: inline-block;
+        transition: all 0.2s;
+
+        &:hover {
+          transform: scale(1.3) rotate(-10deg);
+        }
+
+        &:hover:last-child {
+          transform: scale(2) rotate(10deg);
+          color: #F9E034;
+        }
+      }
+    }
+  }
+}
+
+@keyframes beerjs-logo-animation {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(20deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-20deg); }
+  100% { transform: rotate(0deg); }
+}
