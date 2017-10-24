@@ -1,13 +1,17 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-
-import './Grid.css';
+import { likeBeer } from '../actions/chelasActions';
 import Item from './Item';
+import './Grid.css';
 
 class Grid extends PureComponent {
 
   renderItems = () => {
-    return this.props.chelas.map((chela, i) => <Item key={i} index={i} chela={chela} />);
+    return this.props.chelas.map((chela, i) => <Item key={i} index={i} chela={chela} likeBeer={this.likeBeer} />);
+  }
+
+  likeBeer = index => {
+    this.props.like(index);
   }
 
   render () {
@@ -23,6 +27,11 @@ const mapStateToProps = state => ({
   chelas: state.chelas
 });
 
+const mapDispatchToProps = dispatch => ({
+  like: index => dispatch(likeBeer(index))
+})
+
 export default connect(
-  mapStateToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(Grid);
