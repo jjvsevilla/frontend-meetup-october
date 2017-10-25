@@ -18,34 +18,50 @@ div.header-wrapper {
     height: 100%;
     text-decoration: none;
 
-    img {
+    img.logo {
       height: 80%;
       animation: beerjs-logo-animation infinite 2s linear;
     }
 
-    div.logo {
-      font-size: 6rem;
-      font-family: 'Seymour One', sans-serif;
-      color: #ffffff;
-      margin: 0;
-      height: 100%;
+    .content {
       display: flex;
-      flex-direction: row;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
 
-      span {
-        display: inline-block;
-        transition: all 0.2s;
+      .title {
+        font-size: 5rem;
+        font-weight: 100;
+        color: #fff;
+        letter-spacing: -1px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        text-shadow: 3px 3px 0 rgba(0,0,0,0.15);
+        position: relative;
+        z-index: 2;
+        display: block;
+        font-family: 'Seymour One', sans-serif;
 
-        &:hover {
-          transform: scale(1.3) rotate(-10deg);
-        }
+        span {
+          display: inline-block;
+          transition: all 0.2s;
 
-        &:hover:last-child {
-          transform: scale(2) rotate(10deg);
-          color: #F9E034;
+          &:hover {
+            transform: scale(1.3) rotate(-10deg);
+          }
+
+          &:hover:last-child {
+            transform: scale(2) rotate(10deg);
+            color: #F9E034;
+          }
         }
+      }
+
+      .subtitle {
+        display: block;
+        color: #fff;
+        font-family: 'Seymour One', sans-serif;
+        font-size: 2.5rem;
       }
     }
   }
