@@ -10,11 +10,12 @@ const formattedText = title => {
 };
 
 const Header = (props) => {
-  const spans = formattedText(props.title);
+  const { title } = props;
+  const spans = formattedText(title);
   return (
     <div className="header-wrapper">
       <Link to="/" className="header">
-        <img src={beerJS} />
+        <img src={beerJS} alt={title} />
         <div className="logo" dangerouslySetInnerHTML={{__html: spans}}></div>
       </Link>
     </div>

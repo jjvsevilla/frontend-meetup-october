@@ -7,14 +7,38 @@ figure.chela-item {
   border: 1px solid #d3d3d3;
   background: #fff;
   box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.03); }
-  figure.chela-item div.image-wrapper img {
-    width: 100%; }
+  figure.chela-item div.image-wrapper {
+    position: relative; }
+    figure.chela-item div.image-wrapper img {
+      width: 100%; }
+    figure.chela-item div.image-wrapper .likes-animation {
+      background: url(https://emojipedia-us.s3.amazonaws.com/thumbs/120/microsoft/106/clinking-beer-mugs_1f37b.png) center no-repeat;
+      background-size: contain;
+      font-size: 1.2rem;
+      padding: 1rem;
+      position: absolute;
+      color: #000000;
+      left: 50%;
+      top: 50%;
+      pointer-events: none;
+      opacity: 0;
+      transition: all 0.5s;
+      transform: translateX(-50%) translateY(-50%) scale(5);
+      display: block; }
+      figure.chela-item div.image-wrapper .likes-animation.like-enter {
+        transition: all 0.2s;
+        transform: translateX(-50%) translateY(-50%) scale(1);
+        opacity: 1; }
+        figure.chela-item div.image-wrapper .likes-animation.like-enter.like-enter-active {
+          transform: translateX(-50%) translateY(-50%) scale(5); }
+      figure.chela-item div.image-wrapper .likes-animation.like-leave-active {
+        display: none; }
   figure.chela-item figcaption.caption {
     margin: 0 2rem 2rem; }
     figure.chela-item figcaption.caption div.actions {
       display: flex;
-      justify-content: center; }
-      figure.chela-item figcaption.caption div.actions button {
+      justify-content: space-between; }
+      figure.chela-item figcaption.caption div.actions button, figure.chela-item figcaption.caption div.actions .button {
         border: 2px solid #f2f2f2;
         background: none;
         flex-basis: 48%;
@@ -26,5 +50,5 @@ figure.chela-item {
         color: #125688;
         transition: all 0.2s;
         box-sizing: border-box; }
-        figure.chela-item figcaption.caption div.actions button.likes {
+        figure.chela-item figcaption.caption div.actions button.likes, figure.chela-item figcaption.caption div.actions .button.likes {
           cursor: pointer; }

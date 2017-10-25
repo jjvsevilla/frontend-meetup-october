@@ -7,7 +7,7 @@ function chelasReducer(state = chelas, action) {
       const { index } = action;
       return [
         ...state.slice(0, index),
-        Object.assign({}, state[index], { likes: state[index].likes + 1 }),
+        {...state[index], likes: state[index].likes + 1},
         ...state.slice(index + 1)
       ];
     default:
