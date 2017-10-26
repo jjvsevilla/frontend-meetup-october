@@ -3,3 +3,9 @@ div.chela-list {
   margin: 0 auto;
   column-count: 3;
   column-gap: 2rem; }
+  div.chela-list:hover figure {
+    opacity: 0.3; }
+  div.chela-list figure {
+    transition: .8s opacity; }
+    div.chela-list figure:hover {
+      opacity: 1; }

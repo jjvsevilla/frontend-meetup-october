@@ -3,4 +3,18 @@ div.chela-list {
   margin: 0 auto;
   column-count: 3;
   column-gap: 2rem;
+
+  &:hover {
+    figure {
+      opacity: 0.3;
+    }
+  }
+
+  figure {
+    transition: .8s opacity;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }

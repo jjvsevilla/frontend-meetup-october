@@ -1,43 +1,43 @@
 const comments = {
   "1": [
     {
-      "text": "Muy buena chela",
+      "text": "Muy buena chela 😎🍺",
       "user": "Juan"
     },
     {
-      "text": "Para pasarla entre patas",
+      "text": "Para pasarla entre patas 🍻",
       "user": "Jose"
     }
   ],
   "2": [
     {
-      "text": "Preciso pal fulvaso",
+      "text": "Preciso pal fulvaso 😉⚽⚽⚽🍻🍺😎",
       "user": "Manuel"
     }
   ],
   "3": [
     {
-      "text": "Sabor intenso y muy, muy refrescante",
+      "text": "Sabor intenso y muy, muy refrescante 😎",
       "user": "Jorge"
     },
     {
-      "text": "Buen sabor, buen olor, buen color!",
+      "text": "Buen sabor, buen olor, buen color! 😏😏😏🥂🔥",
       "user": "Isaac"
     }
   ],
   "4": [
     {
-      "text": "La cerveza del los Italianos",
+      "text": "La cerveza del los Italianos 😁",
       "user": "Luis"
     },
     {
-      "text": "Una obra de arte",
+      "text": "Una obra de arte 😎🍾",
       "user": "Marvin"
     }
   ],
   "5": [
     {
-      "text": "Una bebida milenaria que halaga los sentidos...",
+      "text": "Una bebida milenaria que halaga los sentidos... 😜🍺",
       "user": "Richard"
     },
     {
@@ -51,27 +51,27 @@ const comments = {
   ],
   "7": [
     {
-      "text": "Budweiser quita la sed",
+      "text": "Budweiser quita la sed 🍺",
       "user": "Denis"
     },
     {
-      "text": "La mejor cerveza Norte-Americana",
+      "text": "La mejor cerveza Norte-Americana 😲",
       "user": "Carlos"
     }
   ],
   "8": [
     {
-      "text": "Una buena elección para celebrar.",
+      "text": "Una buena elección para celebrar. 😈🍻🚀",
       "user": "Gustavo"
     },
     {
-      "text": "El verde amor!",
+      "text": "El verde amor! 😏😏😏🍾",
       "user": "Erik"
     }
   ],
   "10": [
     {
-      "text": "Cerveza en copa de champán",
+      "text": "Cerveza en copa de champán 😁🍸",
       "user": "Angela"
     },
     {
