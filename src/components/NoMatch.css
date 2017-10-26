@@ -1,0 +1,8 @@
+div.not-found-page {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  div.not-found-page p {
+    font-size: 2rem; }
