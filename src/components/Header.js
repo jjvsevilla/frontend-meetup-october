@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import './Header.css';
-import beerJS from '../imgs/BeerJS.png';
 
 const formattedText = title => (title.split('').map(x => `<span>${x}</span>`).join(''));
 
@@ -11,7 +10,7 @@ const Header = ({ title = 'React!', subtitle = '' }) => {
   return (
     <div className="header-wrapper">
       <Link to="/" className="header">
-        <img className="logo" src={beerJS} alt={title} />
+        <img className="logo" src={`${process.env.PUBLIC_URL}/BeerJS.png`} alt={title} />
         <div className="content">
           <div className="title" dangerouslySetInnerHTML={{__html: spans}}></div>
           <div className="subtitle">{subtitle}</div>
