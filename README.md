@@ -21,7 +21,7 @@ To launch the project, run the following commands:
 - [React Router Training](https://reacttraining.com/react-router/web/guides/philosophy)
 
 ## Core Dependencies
-- [Redux](https://github.com/reactjs/redux/
+- [Redux](https://github.com/reactjs/redux/)
 - [React Redux](https://github.com/reactjs/react-redux)
 - [React Router](https://github.com/ReactTraining/react-router)
 - [CSSTransitionGroup](https://github.com/reactjs/react-transition-group/tree/v1-stable#high-level-api-csstransitiongroup)
